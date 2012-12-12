@@ -1,0 +1,121 @@
+Documentation
+=============
+See http://code.google.com/apis/publicdata/docs/dspltools.html for documentation.
+
+
+Release Notes
+=============
+*** v0.1 ***
+Release date: April 11, 2011
+
+Description:
+------------
+DSPL Tools released!
+
+
+*** v0.2 ***
+Release date: April 18, 2011
+
+Description:
+------------
+Enhanced DSPL Check by adding significant functionality beyond XML schema
+validation, including the checking of internal dataset references and CSV
+file structure.
+
+
+*** v0.2.1 ***
+Release date: April 21, 2011
+
+Description:
+------------
+Use column ID to distinguish between years and integers in dsplgen.
+
+
+*** v0.3 ***
+Release date: April 26, 2011
+
+Description:
+------------
+Extended DSPL Check to validate dataset CSV data (sorting, instance IDs)
+and slice / table links. 
+
+Added concept hierarchy support to DSPL Gen.
+
+
+*** v0.3.5 ***
+Release date: May 4, 2011
+
+Description:
+------------
+Extended DSPL Check to support checking of:
+  - Table column / concept type consistency
+  - Date formats
+  - Formatting of float and integer CSV values
+  - Datasets where CSV columns are in different order than columns in table
+    metadata
+
+Improved error messages when files can't be found or opened.
+
+Fixed bug in DSPL Gen naming of external concepts.
+
+
+*** v0.3.6 ***
+Release date: May 6, 2011
+
+Description:
+------------
+Added 'checking_level' option to DSPL Check.
+
+CSV files are now loaded in 'universal newline mode' to reduce risk of parsing
+problems.
+
+
+*** v0.3.7 ***
+Release date: May 6, 2011
+
+Description:
+------------
+Added zipped dataset checking to DSPL Check.
+
+Strip whitespace from CSV values (to mimic behavior of PDE importer).
+
+
+*** v0.4 ***
+Release date: May 20, 2011
+
+Description:
+------------
+Added topic reference checking to DSPL Check.
+
+Changed schema validation process to use local XML schema files instead of
+calling out to W3C servers.
+
+
+*** v0.4.1 ***
+Release date: June 2, 2011
+
+Description:
+------------
+Added test for trivial slices to DSPL Check.
+
+Improved behavior of DSPL Check when empty tables are encountered.
+
+
+*** v0.4.2 ***
+Release date: June 20, 2011
+
+Description:
+------------
+Changed implementation of default csv_data_source to use in-memory Python
+objects instead of sqlite. The latter can still be used by setting the '-t'
+option of dsplgen to 'csv_sqlite'.
+
+
+*** v0.4.3 ***
+Release date: November 3, 2011
+
+Description:
+------------
+Fixed some bugs around multi-level concept hierarchies.
+
+Added total_val parameter to support pre-computed rollups in data.
